@@ -24,4 +24,24 @@
     .website {
         @apply text-body font-bold text-very-dark-magenta;
     }
+
+    .testimonial-card {
+        @apply p-8 rounded-lg bg-very-dark-magenta h-fit;
+    }
+
+    .user-info {
+        @apply flex items-center gap-x-4 mb-7;
+    }
+
+    .user-name {
+        @apply text-white text-base font-bold;
+    }
+
+    .user-label {
+        @apply text-soft-pink leading-none;
+    }
+
+    .comment {
+        @apply text-white font-medium;
+    }
 }
