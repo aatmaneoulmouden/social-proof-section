@@ -14,24 +14,33 @@
 
 <body class="relative">
   <!-- start Patterns -->
-  <img src="./assets/images/bg-pattern-top-desktop.svg" alt="" class="top-pattern absolute top-0 left-0 -z-10">
+  <img src="./assets/images/bg-pattern-top-desktop.svg" alt=""
+    class="hidden top-pattern absolute top-0 left-0 -z-10 lg:block">
   <img src="./assets/images/bg-pattern-bottom-desktop.svg" alt=""
-    class="bottom-pattern absolute right-0 bottom-0 -z-10">
+    class="hidden bottom-pattern absolute right-0 bottom-0 -z-10 lg:block">
+
+  <img src="./assets/images/bg-pattern-top-mobile.svg" alt=""
+    class="block top-pattern absolute top-0 left-0 -z-10 lg:hidden">
+  <img src="./assets/images/bg-pattern-bottom-mobile.svg" alt=""
+    class="block bottom-pattern absolute right-0 bottom-0 -z-10 lg:hidden">
   <!-- end Patterns -->
-  <main class="w-full h-screen">
+  <main class="w-full min-h-screen py-9">
     <div class="container max-w-full">
-      <div class="h-screen flex flex-col justify-center items-center gap-y-8">
-        <section class="heading-wrapper w-full flex justify-between">
+      <div class="min-h-screen flex flex-col justify-center items-center gap-y-11 lg:gap-y-8">
+        <section
+          class="heading-wrapper w-full flex flex-col items-center justify-between gap-y-6 lg:gap-y-0 lg:flex-row">
           <div class="left">
-            <h1 class="text-4xl font-bold text-very-dark-magenta mb-5 max-w-[230px]">10,000+ of our users love our
+            <h1
+              class="text-4xl font-bold leading-none text-very-dark-magenta mb-5 max-w-[230px] mx-auto text-center lg:text-left lg:ml-0">
+              10,000+ of our users love our
               products.</h1>
-            <p class="text-body text-dark-grayish-magenta font-normal max-w-[348px]">
+            <p class="text-body text-dark-grayish-magenta font-normal max-w-[348px] text-center lg:text-left">
               We only provide great products combined with excellent customer service.
               See what our satisfied customers are saying about our services.
             </p>
           </div>
-          <div class="right w-fit">
-            <div class="review-card -ml-20">
+          <div class="right w-full lg:w-fit">
+            <div class="review-card lg:-ml-20">
               <span class="starts-wrapper">
                 <img src="./assets/images/icon-star.svg" alt="star">
                 <img src="./assets/images/icon-star.svg" alt="star">
@@ -41,7 +50,7 @@
               </span>
               <p class="website">Rated 5 Stars in Reviews</p>
             </div>
-            <div class="review-card -ml-10">
+            <div class="review-card lg:-ml-10">
               <span class="starts-wrapper">
                 <img src="./assets/images/icon-star.svg" alt="star">
                 <img src="./assets/images/icon-star.svg" alt="star">
@@ -63,7 +72,7 @@
             </div>
           </div>
         </section>
-        <section class="testimonials-wrapper grid grid-cols-3 gap-8">
+        <section class="testimonials-wrapper gap-8 grid grid-cols-1 lg:grid-cols-3">
           <div class="testimonial-card">
             <div class="user-info">
               <img src="./assets/images/image-colton.jpg" alt="Colton Smith" class="rounded-full" width="42"
@@ -79,7 +88,7 @@
               Excellent!
             </q>
           </div>
-          <div class="testimonial-card mt-10">
+          <div class="testimonial-card lg:mt-10">
             <div class="user-info">
               <img src="./assets/images/image-irene.jpg" alt="Irene Roberts" class="rounded-full" width="42"
                 height="42">
@@ -93,7 +102,7 @@
               delighted with the simplicity of the purchase and the speed of delivery.
             </q>
           </div>
-          <div class="testimonial-card mt-20">
+          <div class="testimonial-card lg:mt-20">
             <div class="user-info">
               <img src="./assets/images/image-anne.jpg" alt="Anne Wallace" class="rounded-full" width="42" height="42">
               <div>
